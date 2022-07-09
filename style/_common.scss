@@ -1,0 +1,129 @@
+main {
+    width: 85%;
+    margin: auto;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+section {
+    padding: 100px 0px;
+    width: 100%;
+    @media screen and (max-width: 900px) {
+        padding: 50px 0px;
+    }
+}
+
+a {
+    color: $white;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+li {
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #222222;
+}
+
+h1 {
+    color: $balck;
+    font-size: 46px;
+    font-weight: 600;
+    &::after {
+        content: "";
+        display: block;
+        width: 151px;
+        height: 4px;
+        background: $primaryColor;
+        @media screen and (max-width: 768px) {
+            width: 95px;
+            margin-bottom: 40px;
+        }
+    }
+    span {
+        color: $primaryColor;
+        font-size: 40px;
+        font-weight: 600;
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            white-space: wrap;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    color: $balck;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4 {
+    color: $balck;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    span {
+        background: #00CBFF;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        min-width: 40px;
+        border-radius: 40px;
+        color: #ffffff;
+        margin-right: 14px;
+        vertical-align: text-bottom;
+        font-weight: 300;
+    }
+}
+
+.content {
+    width: 60%;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.review {
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        font-weight: 600;
+        font-size: 40px;
+        color: $primaryColor;
+    }
+}
+
+.future-section::after,
+.control-section::after,
+.feedback-section::after {
+    @media screen and (max-width: 900px) {
+        opacity: 0.2;
+    }
+}
+
+.future-section::before,
+.control-section::before,
+.feedback-section::before {
+    @media screen and (max-width: 900px) {
+        opacity: 0.6;
+    }
+}

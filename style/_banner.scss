@@ -1,0 +1,69 @@
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+        height: auto;
+        margin-bottom: 0;
+    }
+    &::after {
+        content: "";
+        background: url(../images/drone-slider-banner.png) center center / contain no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 77%;
+        top: 4%;
+        right: -9%;
+        z-index: -1;
+        height: 100%;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .content {
+        width: 40%;
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 30px;
+            font-size: 55px;
+            font-weight: 700;
+            color: $white;
+            span {
+                color: $balck;
+            }
+            @media screen and (max-width: 768px) {
+                color: $balck;
+            }
+        }
+        p {
+            color: $white;
+            line-height: 40px;
+            @media screen and (max-width: 768px) {
+                color: $balck;
+            }
+        }
+        .twoButton {
+            margin-top: 30px;
+            .price {
+                width: 160px;
+                padding: 15px 0;
+                color: $primaryColor;
+                background: $white;
+                margin-bottom: 30px;
+                border: 1px solid rgb(217, 212, 212);
+                &:hover {
+                    background: black;
+                }
+            }
+            .discover {
+                width: 250px;
+                padding: 15px 0;
+                background: $balck;
+                color: $white;
+            }
+        }
+    }
+}
